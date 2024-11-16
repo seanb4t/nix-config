@@ -40,6 +40,7 @@ with pkgs; [
   hack-font
   noto-fonts
   noto-fonts-emoji
+  meslo-lg
   meslo-lgs-nf
 
   # Node.js development tools
@@ -56,6 +57,7 @@ with pkgs; [
   iftop
   jetbrains-mono
   jq
+  neovim
   restic
   ripgrep
   starship
@@ -66,6 +68,10 @@ with pkgs; [
   zsh-powerlevel10k
 
   # Python packages
-  # python39
-  # python39Packages.virtualenv # globally install virtualenv
+  python3
+  pipx
+  pyenv
+
+  # Rust
+  rustup
 ]

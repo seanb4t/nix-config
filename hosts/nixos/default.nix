@@ -278,8 +278,10 @@ let user = "sean";
   fonts.packages = with pkgs; [
     dejavu_fonts
     feather-font # from overlay
-    jetbrains-mono
     font-awesome
+    jetbrains-mono
+    meslo-lg
+    meslo-lgs-nf
     noto-fonts
     noto-fonts-emoji
   ];

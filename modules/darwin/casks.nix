@@ -1,39 +1,41 @@
 _:
 
 [
-  # Core 
   "1password"
-  "wezterm"
-
-  # Development Tools
-  "jetbrains-toolbox"
-  "orbstack"
-  "visual-studio-code"
-
-  # Communication Tools
-  "discord"
-  "notion"
-  "slack"
-  "telegram"
-  "zoom"
-
-  # Utility Tools
+  "backblaze"
+  "balenaetcher"
+  "bambu-studio"
+  "battle-net"
   "betterdisplay"
+  "brave-browser"
+  "cardhop"
+  "chatgpt"
   "cleanmymac"
+  "curseforge"
+  "discord"
+  "drivethrurpg"
+  "fantastical"
+  "github"
+  "google-drive"
+  "hammerspoon"
+  "httpie"
+  "jetbrains-toolbox"
   "karabiner-elements"
+  "keybase"
   "keycastr"
-  "syncthing"
-
-  # Entertainment Tools
+  "notion"
+  "obsidian"
+  "orbstack"
+  "parallels"
+  "pdf-expert"
+  "raycast"
+  "rectangle-pro"
+  "slack"
   "soundsource"
   "spotify"
-
-  # Productivity Tools
-  "fantastical"
-  "hammerspoon"
-  "obsidian"
-  "raycast"
-
-  # Browsers
-  "brave-browser"
+  "syncthing"
+  "telegram"
+  "visual-studio-code"
+  "wezterm"
+  "zoom"
 ]
