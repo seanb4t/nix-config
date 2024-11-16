@@ -27,6 +27,10 @@ in
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
     # onActivation.cleanup = "uninstall";
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+    };
 
     # These app IDs are from using the mas CLI app
     # mas = mac app store
@@ -42,6 +46,25 @@ in
       "Tailscale" = 1475387142;
       "Windows App" = 1295203466; # Remote Desktop
     };
+
+    extraConfig = ''
+      vscode "1Password.op-vscode"
+      vscode "bbenoist.Nix"
+      vscode "bmalehorn.vscode-fish"
+      vscode "eamodio.gitlens"
+      vscode "esbenp.prettier-vscode"
+      vscode "foxundermoon.shell-format"
+      vscode "GitHub.copilot"
+      vscode "GitHub.copilot-chat"
+      vscode "GitHub.vscode-pull-request-github"
+      vscode "ms-azuretools.vscode-docker"
+      vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+      vscode "redhat.java"
+      vscode "tamasfe.even-better-toml"
+      vscode "timonwong.shellcheck"
+      vscode "vscjava.vscode-gradle"
+      vscode "vscjava.vscode-spring-initializr"
+    '';
   };
 
   # Enable home-manager
@@ -61,10 +84,6 @@ in
         direnv = {
           enable = true;
           nix-direnv.enable = true;
-        };
-        neovim = {
-          enable = true;
-          defaultEditor  = true;
         };
       } // import ../shared/home-manager.nix { inherit config pkgs lib; };
 

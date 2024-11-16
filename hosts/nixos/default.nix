@@ -58,9 +58,6 @@ let user = "sean";
 
     # Needed for anything GTK related
     dconf.enable = true;
-
-    # My shell
-    fish.enable = true;
   };
 
   services = { 

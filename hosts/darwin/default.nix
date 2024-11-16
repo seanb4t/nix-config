@@ -41,11 +41,6 @@ let user = "sean"; in
     pkgs.zsh
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
-  programs = {
-    fish.enable = true;
-    zsh.enable = true;
-  };
-
   system = {
     stateVersion = 5;
 

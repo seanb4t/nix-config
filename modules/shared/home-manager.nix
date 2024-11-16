@@ -5,25 +5,13 @@ let name = "Sean Brandt";
     email = "4678+seanb4t@users.noreply.github.com"; in
 {
   # Shared shell configuration
-  fish = {
-    enable = true;
-  };
+  # fish = {
+  #   enable = true;
+  # };
 
   zsh = {
     enable = true;
     autocd = false;
-    plugins = [
-      {
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
-      {
-        name = "powerlevel10k-config";
-        src = lib.cleanSource ./config;
-        file = "p10k.zsh";
-      }
-    ];
 
     initExtraFirst = ''
       if [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
@@ -61,22 +49,22 @@ let name = "Sean Brandt";
     '';
   };
 
-  git = {
-    enable = true;
-    lfs = {
-      enable = true;
-    };
-  };
+  # git = {
+  #   enable = true;
+  #   lfs = {
+  #     enable = true;
+  #   };
+  # };
 
-  neovim = {
-    enable = true;
-  };
+  # neovim = {
+  #   enable = true;
+  # };
   
-  ssh = {
-    enable = true;
-  };
+  # ssh = {
+  #   enable = true;
+  # };
 
-  tmux = {
-    enable = true;
-  };
+  # tmux = {
+  #   enable = true;
+  # };
 }

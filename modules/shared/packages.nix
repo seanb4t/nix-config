@@ -6,9 +6,15 @@ with pkgs; [
   aspellDicts.en
   bash-completion
   bat
+  bottom
   btop
   coreutils
+  delta
   fish
+  gh
+  git
+  git-lfs
+  grc
   killall
   neofetch
   openssh
@@ -18,6 +24,7 @@ with pkgs; [
   zsh
 
   # Encryption and security tools
+  _1password-cli
   age
   age-plugin-yubikey
   gnupg
@@ -42,6 +49,8 @@ with pkgs; [
 
   # Text and terminal utilities
   chezmoi
+  eza
+  fzf
   htop
   hunspell
   iftop
